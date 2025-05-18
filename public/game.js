@@ -15,7 +15,7 @@ function updateUI() {
 }
 
 function saveGame() {
-  fetch('http://localhost:3002/save', {
+  fetch('http://localhost:3003/save', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ userId, gameState: { resource, rate, upgradeCost, prestigeCount } })
@@ -23,7 +23,7 @@ function saveGame() {
 }
 
 function loadGame() {
-  fetch(`http://localhost:3002/load/${userId}`)
+  fetch(`http://localhost:3003/load/${userId}`)
     .then(res => res.json())
     .then(({ gameState }) => {
       if (gameState) {

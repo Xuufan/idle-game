@@ -1,6 +1,15 @@
-#resource-counter {
-    font-size: 24px;
-  }
-  #click-button {
-    padding: 10px;
-  }
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 2rem;
+  background: #f0f0f0;
+}
+button {
+  margin: 10px;
+  padding: 1em;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+@media (max-width: 600px) {
+  button { width: 100%; }
+}

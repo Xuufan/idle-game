@@ -3,11 +3,11 @@ const cors = require('cors');
 const fs = require('fs').promises;
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3003;
 
 // Enhanced CORS configuration
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'http://localhost:3003',
   credentials: true
 }));
 
